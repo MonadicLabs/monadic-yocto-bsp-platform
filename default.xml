@@ -1,0 +1,24 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="pyro"/>
+
+  <remote fetch="https://github.com/MonadicLabs" name="monadic"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project remote="yocto" revision="pyro" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="pyro" name="meta-freescale" path="sources/meta-freescale"/>
+  <project remote="oe" revision="pyro" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <!-- Gateworks meta layer & setup scripts -->
+  <project remote="monadic" revision="master" name="meta-mndflight" path="sources/meta-mndflight"/>
+
+  <project remote="monadic" revision="master" name="gateworks-yocto-bsp-base" path="sources/base">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+</manifest>
