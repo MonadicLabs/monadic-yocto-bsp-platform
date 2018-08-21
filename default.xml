@@ -6,12 +6,16 @@
   <remote fetch="https://github.com/MonadicLabs" name="monadic"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://bitbucket.org/pficheux/meta-xenomai" name="xenomai"/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
-  <project remote="yocto" revision="sumo" name="poky" path="sources/poky"/>
-  <project remote="oe" revision="sumo" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
+  <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <!-- Gateworks meta layer & setup scripts -->
+  <!-- Xenomai -->
+  <project remote="xenomai" revision="rocko" name="xenomai" path="sources/meta-xenomai"/>
+
+  <!-- Monadic meta layer & setup scripts -->
   <project remote="monadic" revision="master" name="meta-mndflight" path="sources/meta-mndflight"/>
 
   <project remote="monadic" revision="master" name="monadic-yocto-bsp-base" path="sources/base">
