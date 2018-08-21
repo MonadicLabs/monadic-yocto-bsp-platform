@@ -13,7 +13,10 @@
   <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <!-- Xenomai -->
-  <project remote="xenomai" revision="rocko" name="xenomai" path="sources/meta-xenomai"/>
+  <project remote="xenomai" revision="master" name="xenomai" path="sources/meta-xenomai"/>
+
+  <!-- Raspberry -->
+  <project remote="yocto" revision="rocko" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
 
   <!-- Monadic meta layer & setup scripts -->
   <project remote="monadic" revision="master" name="meta-mndflight" path="sources/meta-mndflight"/>
