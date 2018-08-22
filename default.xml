@@ -6,14 +6,14 @@
   <remote fetch="https://github.com/MonadicLabs" name="monadic"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://bitbucket.org/pficheux/meta-xenomai" name="xenomai"/>
+  <remote fetch="https://github.com/s-vincent" name="xenomai"/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <!-- Xenomai -->
-  <project remote="xenomai" revision="master" name="xenomai" path="sources/meta-xenomai"/>
+  <project remote="xenomai" revision="master" name="meta-raspberrypi-rt-sv" path="sources/meta-raspberrypi-rt-sv"/>
 
   <!-- Raspberry -->
   <project remote="yocto" revision="rocko" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
